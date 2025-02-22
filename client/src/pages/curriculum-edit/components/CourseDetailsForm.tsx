@@ -185,6 +185,7 @@ export default function CourseDetailsForm() {
                             className="w-full p-2"
                         />
                     </div>
+
                 </div>
                 <div className="grid grid-cols-2 border-b border-gray-300">
                     <div className="border-r border-gray-300 p-2 font-bold">{t('course.instructors')}</div>
