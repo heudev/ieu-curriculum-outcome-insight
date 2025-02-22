@@ -1,0 +1,46 @@
+{
+    "common": {
+        "select": "Seçiniz"
+    },
+    "course": {
+        "name": "Ders Adı",
+        "code": "Ders Kodu",
+        "semester": "Dönem",
+        "theory": "Teori",
+        "practice": "Uygulama",
+        "localCredit": "Yerel Kredi",
+        "ects": "AKTS",
+        "prerequisites": "Ön Koşullar",
+        "language": "Eğitim Dili",
+        "type": "Ders Tipi",
+        "level": "Seviye",
+        "deliveryType": "Verilme Şekli",
+        "teachingMethods": "Öğretim Yöntemleri",
+        "coordinator": "Koordinatör",
+        "instructors": "Öğretim Üyeleri",
+        "assistants": "Asistanlar",
+        "nationalQualificationCode": "Ulusal Yeterlilik Kodu",
+        "purpose": "Dersin Amacı",
+        "description": "Ders Tanımı",
+        "category": "Dersin Kategorisi",
+        "categories": {
+            "basic": "Temel Ders",
+            "expertise": "Uzmanlık/Alan Dersleri",
+            "support": "Destek Dersleri",
+            "communication": "İletişim ve Yönetim Becerileri Dersleri",
+            "transferable": "Aktarılabilir Beceri Dersleri"
+        },
+        "outcomes": {
+            "title": "Program Çıktıları",
+            "number": "#",
+            "content": "İçerik",
+            "programAlternative": "PÇ Alt.",
+            "contributionLevel": "Katkı Düzeyi"
+        }
+    },
+    "semesters": {
+        "fall": "Güz",
+        "spring": "Bahar",
+        "fallSpring": "Güz/Bahar"
+    }
+}

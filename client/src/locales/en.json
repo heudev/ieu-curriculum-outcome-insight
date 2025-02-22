@@ -1,0 +1,46 @@
+{
+    "common": {
+        "select": "Select"
+    },
+    "course": {
+        "name": "Course Name",
+        "code": "Course Code",
+        "semester": "Semester",
+        "theory": "Theory",
+        "practice": "Practice",
+        "localCredit": "Local Credit",
+        "ects": "ECTS",
+        "prerequisites": "Prerequisites",
+        "language": "Teaching Language",
+        "type": "Course Type",
+        "level": "Level",
+        "deliveryType": "Delivery Type",
+        "teachingMethods": "Teaching Methods",
+        "coordinator": "Coordinator",
+        "instructors": "Instructors",
+        "assistants": "Assistants",
+        "nationalQualificationCode": "National Qualification Code",
+        "purpose": "Course Purpose",
+        "description": "Course Description",
+        "category": "Course Category",
+        "categories": {
+            "basic": "Basic Course",
+            "expertise": "Expertise/Field Courses",
+            "support": "Support Courses",
+            "communication": "Communication and Management Skills Courses",
+            "transferable": "Transferable Skills Courses"
+        },
+        "outcomes": {
+            "title": "Program Outcomes",
+            "number": "#",
+            "content": "Content",
+            "programAlternative": "PO Alt.",
+            "contributionLevel": "Contribution Level"
+        }
+    },
+    "semesters": {
+        "fall": "Fall",
+        "spring": "Spring",
+        "fallSpring": "Fall/Spring"
+    }
+}

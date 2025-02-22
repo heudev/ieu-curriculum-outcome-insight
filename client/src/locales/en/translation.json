@@ -1,0 +1,142 @@
+{
+    "common": {
+        "select": "Select",
+        "language": "Language",
+        "turkish": "Turkish",
+        "english": "English",
+        "userMenu": "User menu",
+        "enterNumber": "Enter Number"
+    },
+    "course": {
+        "name": "Course Name",
+        "code": "Code",
+        "semester": "Semester",
+        "theory": "Theory (hours/week)",
+        "practice": "Practice / Laboratory (hours/week)",
+        "localCredit": "Local Credit",
+        "ects": "ECTS",
+        "prerequisites": "Prerequisites",
+        "language": "Course Language",
+        "type": "Course Type",
+        "level": "Course Level",
+        "deliveryType": "Course Delivery Type",
+        "teachingMethods": "Course Teaching Methods and Techniques",
+        "coordinator": "Course Coordinator",
+        "instructors": "Instructor(s)",
+        "assistants": "Assistant(s)",
+        "nationalQualificationCode": "National Qualification Code",
+        "purpose": "Course Purpose",
+        "description": "Course Description",
+        "category": "Course Category",
+        "categoryTitle": "Course Category",
+        "categories": {
+            "basic": "Basic Course",
+            "expertise": "Expertise/Field Course",
+            "support": "Support Course",
+            "communication": "Communication and Management Skills Course",
+            "transferable": "Transferable Skill Course"
+        },
+        "outcomes": {
+            "title": "Students who successfully complete this course",
+            "number": "#",
+            "content": "Content",
+            "programAlternative": "PO Alt.",
+            "contributionLevel": "Contribution Level"
+        },
+        "weeklyTopics": {
+            "title": "Weekly Topics",
+            "week": "Week",
+            "topics": "Topics",
+            "preparation": "Preparation",
+            "learningOutcomes": "Learning Outcomes"
+        },
+        "textbook": "Textbook",
+        "suggestedReadings": "Suggested Readings/Materials"
+    },
+    "navigation": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "curriculumEdit": "Edit Curriculum",
+        "outcomes": "Outcomes"
+    },
+    "evaluation": {
+        "title": "EVALUATION SYSTEM",
+        "semesterActivities": "Semester Activities",
+        "quantity": "Number",
+        "contributionLevel": "Weighting",
+        "learningOutcome": "Learning Outcome",
+        "activities": {
+            "participation": "Participation",
+            "laboratory": "Laboratory / Application",
+            "fieldwork": "Field Work",
+            "quiz": "Quiz / Studio Critique",
+            "portfolio": "Portfolio",
+            "homework": "Homework",
+            "presentation": "Presentation / Jury Presentation",
+            "project": "Project",
+            "seminar": "Seminar / Workshop",
+            "oralExam": "Oral Exam",
+            "midterm": "Midterm",
+            "final": "Final"
+        },
+        "total": "Total",
+        "midtermContribution": "Weighting of Semester Activities on the Final Grade",
+        "finalContribution": "Weighting of End-of-Semester Activities on the Final Grade"
+    },
+    "ectsWorkload": {
+        "title": "ECTS / WORKLOAD TABLE",
+        "activity": "Activity",
+        "number": "Number",
+        "duration": "Duration (Hours)",
+        "totalWorkload": "Total Workload",
+        "total": "Total",
+        "hours": "hours",
+        "activities": {
+            "courseHours": "Course Hours",
+            "laboratoryHours": "Laboratory Hours",
+            "applicationHours": "Application Hours",
+            "studyHours": "Study Hours for Course Material",
+            "fieldwork": "Field Work",
+            "quizHours": "Quiz Hours",
+            "homeworkHours": "Homework Hours",
+            "presentationHours": "Presentation Hours",
+            "projectHours": "Project Hours",
+            "seminarHours": "Seminar Hours",
+            "midtermHours": "Midterm Study Hours",
+            "finalHours": "Final Study Hours"
+        }
+    },
+    "languages": {
+        "tr": "Turkish",
+        "en": "English"
+    },
+    "courseTypes": {
+        "mandatory": "Mandatory",
+        "elective": "Elective",
+        "technicalElective": "Technical Elective"
+    },
+    "courseLevels": {
+        "associateDegree": "Associate Degree",
+        "undergraduate": "Bachelor's Degree",
+        "graduate": "Master's Degree",
+        "doctorate": "Doctorate"
+    },
+    "deliveryTypes": {
+        "faceToFace": "Face to Face",
+        "online": "Online",
+        "hybrid": "Hybrid"
+    },
+    "semesters": {
+        "fall": "Fall",
+        "spring": "Spring",
+        "fallSpring": "Fall/Spring"
+    },
+    "programOutcome": {
+        "title": "RELATIONSHIP BETWEEN COURSE LEARNING OUTCOMES AND PROGRAM COMPETENCIES",
+        "py": "PC",
+        "pyAlt": "PC Alt.",
+        "content": "Program Competencies / Outcomes",
+        "contributionLevel": "Contribution Level"
+    }
+}

@@ -1,16 +1,20 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Outcomes from "../pages/outcomes";
-import Curriculum from "../pages/curriculum";
+import CurriculumEdit from "../pages/curriculum-edit";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
         children: [
             {
-                path: "curriculum",
-                element: <Curriculum />,
+                index: true,
+                element: <CurriculumEdit />,
+            },
+            {
+                path: "curriculum-edit",
+                element: <CurriculumEdit />,
             },
             {
                 path: "outcomes",

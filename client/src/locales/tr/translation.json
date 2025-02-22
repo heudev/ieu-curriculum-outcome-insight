@@ -1,0 +1,142 @@
+{
+    "common": {
+        "select": "Seçiniz",
+        "language": "Dil",
+        "turkish": "Türkçe",
+        "english": "İngilizce",
+        "userMenu": "Kullanıcı menüsü",
+        "enterNumber": "Sayı Giriniz"
+    },
+    "course": {
+        "name": "Dersin Adı",
+        "code": "Kodu",
+        "semester": "Yarıyıl",
+        "theory": "Teori (saat/hafta)",
+        "practice": "Uygulama / Laboratuvar (saat/hafta)",
+        "localCredit": "Yerel Kredi",
+        "ects": "AKTS",
+        "prerequisites": "Önkoşullar",
+        "language": "Dersin Dili",
+        "type": "Dersin Türü",
+        "level": "Dersin Düzeyi",
+        "deliveryType": "Dersin Verilme Biçimi",
+        "teachingMethods": "Dersin Öğretim Yöntem ve Teknikleri",
+        "coordinator": "Dersin Koordinatörü",
+        "instructors": "Dersin Öğretim Üyesi/Üyeleri",
+        "assistants": "Dersin Yardımcıları",
+        "nationalQualificationCode": "Ulusal Yeterlilik Kodu",
+        "purpose": "Dersin Amacı",
+        "description": "Dersin Tanımı",
+        "category": "Dersin Kategorisi",
+        "categoryTitle": "Dersin Kategorisi",
+        "categories": {
+            "basic": "Temel Ders",
+            "expertise": "Uzmanlık/Alan Dersleri",
+            "support": "Destek Dersleri",
+            "communication": "İletişim ve Yönetim Becerileri Dersleri",
+            "transferable": "Aktarılabilir Beceri Dersleri"
+        },
+        "outcomes": {
+            "title": "Bu dersi başarıyla tamamlayan öğrenciler",
+            "number": "#",
+            "content": "İçerik",
+            "programAlternative": "PÇ Alt.",
+            "contributionLevel": "Katkı Düzeyi"
+        },
+        "weeklyTopics": {
+            "title": "Haftalık Konular",
+            "week": "Hafta",
+            "topics": "Konular",
+            "preparation": "Ön Hazırlık",
+            "learningOutcomes": "Öğrenme Çıktısı"
+        },
+        "textbook": "Ders Kitabı",
+        "suggestedReadings": "Önerilen Okumalar/Materyaller"
+    },
+    "navigation": {
+        "home": "Ana Sayfa",
+        "about": "Hakkında",
+        "contact": "İletişim",
+        "curriculumEdit": "Müfredat Düzenle",
+        "outcomes": "Çıktılar"
+    },
+    "evaluation": {
+        "title": "DEĞERLENDİRME SİSTEMİ",
+        "semesterActivities": "Yarıyıl Aktiviteleri",
+        "quantity": "Sayı",
+        "contributionLevel": "Ağırlık",
+        "learningOutcome": "Öğrenme Çıktısı",
+        "activities": {
+            "participation": "Katılım",
+            "laboratory": "Laboratuvar / Uygulama",
+            "fieldwork": "Arazi Çalışması",
+            "quiz": "Küçük Sınav / Stüdyo Kritiği",
+            "portfolio": "Portfolyo",
+            "homework": "Ödev",
+            "presentation": "Sunum / Jüri Önünde Sunum",
+            "project": "Proje",
+            "seminar": "Seminer / Çalıştay",
+            "oralExam": "Sözlü Sınav",
+            "midterm": "Ara Sınav",
+            "final": "Final"
+        },
+        "total": "Toplam",
+        "midtermContribution": "Yarıyıl İçi Aktivitelerinin Başarı Notuna Katkısı",
+        "finalContribution": "Yarıyıl Sonu Aktivitelerinin Başarı Notuna Katkısı"
+    },
+    "ectsWorkload": {
+        "title": "AKTS / İŞ YÜKÜ TABLOSU",
+        "activity": "Aktivite",
+        "number": "Sayı",
+        "duration": "Süre (Saat)",
+        "totalWorkload": "Toplam İş Yükü",
+        "total": "Toplam",
+        "hours": "saat",
+        "activities": {
+            "courseHours": "Ders Saati",
+            "laboratoryHours": "Laboratuvar Saati",
+            "applicationHours": "Uygulama Saati",
+            "studyHours": "Ders Materyali Çalışma Saati",
+            "fieldwork": "Arazi Çalışması",
+            "quizHours": "Küçük Sınav Saati",
+            "homeworkHours": "Ödev Saati",
+            "presentationHours": "Sunum Saati",
+            "projectHours": "Proje Saati",
+            "seminarHours": "Seminer Saati",
+            "midtermHours": "Ara Sınav Çalışma Saati",
+            "finalHours": "Final Çalışma Saati"
+        }
+    },
+    "languages": {
+        "tr": "Türkçe",
+        "en": "İngilizce"
+    },
+    "courseTypes": {
+        "mandatory": "Zorunlu",
+        "elective": "Seçmeli",
+        "technicalElective": "Teknik Seçmeli"
+    },
+    "courseLevels": {
+        "associateDegree": "Ön Lisans",
+        "undergraduate": "Lisans",
+        "graduate": "Yüksek Lisans",
+        "doctorate": "Doktora"
+    },
+    "deliveryTypes": {
+        "faceToFace": "Yüz Yüze",
+        "online": "Çevrimiçi",
+        "hybrid": "Hibrit"
+    },
+    "semesters": {
+        "fall": "Güz",
+        "spring": "Bahar",
+        "fallSpring": "Güz/Bahar"
+    },
+    "programOutcome": {
+        "title": "DERSİN ÖĞRENİM ÇIKTILARININ PROGRAM YETERLİLİKLERİ İLE İLİŞKİSİ",
+        "py": "PY",
+        "pyAlt": "PY Alt.",
+        "content": "Program Yeterlilikleri / Çıktıları",
+        "contributionLevel": "Katkı Düzeyi"
+    }
+}
