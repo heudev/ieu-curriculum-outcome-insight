@@ -11,5 +11,13 @@ module.exports = {
         POSTGRES_USER: process.env.POSTGRES_USER,
         POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
         POSTGRES_DIALECT: process.env.POSTGRES_DIALECT,
+    },
+    development: {
+        username: process.env.POSTGRES_USER,
+        password: process.env.POSTGRES_PASSWORD,
+        database: process.env.POSTGRES_DB,
+        host: process.env.POSTGRES_HOST,
+        port: process.env.POSTGRES_PORT,
+        dialect: process.env.POSTGRES_DIALECT
     }
 };
