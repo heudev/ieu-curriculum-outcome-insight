@@ -5,7 +5,6 @@ const helmet = require("helmet");
 const cors = require("cors");
 const config = require("../src/config");
 
-require("dotenv").config();
 
 loaders();
 
