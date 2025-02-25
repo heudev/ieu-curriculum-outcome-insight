@@ -1,11 +1,12 @@
 const express = require("express");
-const config = require("./config");
 const loaders = require("./loaders");
 const path = require("path");
 const helmet = require("helmet");
 const cors = require("cors");
+const config = require("../src/config");
 
-config();
+require("dotenv").config();
+
 loaders();
 
 const app = express();

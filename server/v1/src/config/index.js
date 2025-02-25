@@ -2,13 +2,14 @@ require('dotenv').config();
 
 module.exports = {
     server: {
-        port: process.env.PORT || 3000
+        port: process.env.PORT
     },
     db: {
-        host: process.env.DB_HOST || 'localhost',
-        port: process.env.DB_PORT || 5432,
-        database: process.env.DB_NAME || 'ieu_curriculum',
-        username: process.env.DB_USER || 'postgres',
-        password: process.env.DB_PASSWORD || 'postgres'
+        POSTGRES_HOST: process.env.POSTGRES_HOST,
+        POSTGRES_PORT: process.env.POSTGRES_PORT,
+        POSTGRES_DB: process.env.POSTGRES_DB,
+        POSTGRES_USER: process.env.POSTGRES_USER,
+        POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
+        POSTGRES_DIALECT: process.env.POSTGRES_DIALECT,
     }
 };
