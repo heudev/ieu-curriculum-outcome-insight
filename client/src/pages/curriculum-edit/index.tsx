@@ -4,8 +4,10 @@ import WeeklyTopicsForm from "./components/WeeklyTopicsForm";
 import EvaluationSystem from "./components/EvaluationSystem";
 import EctsWorkLoadForm from "./components/EctsWorkLoadForm";
 import ProgramOutcomeTable from "./components/ProgramOutcomeTable";
+import DataHandler from "../../components/DataHandler";
 
 export default function CurriculumEdit() {
+
   return (
     <div className="mt-5 space-y-4 px-30">
       <CourseDetailsForm />
@@ -14,6 +16,7 @@ export default function CurriculumEdit() {
       <EvaluationSystem />
       <EctsWorkLoadForm />
       <ProgramOutcomeTable />
+      <DataHandler />
     </div>
   )
 }
