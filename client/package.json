@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "@tailwindcss/vite": "^4.0.6",
+    "axios": "^1.8.1",
     "formik": "^2.4.6",
     "i18next": "^24.2.2",
     "react": "^19.0.0",
