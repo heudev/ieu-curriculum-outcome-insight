@@ -24,8 +24,24 @@ const initialValues: ISyllabusForm = {
         assistants: [],
         nationalQualificationCode: "",
         courseObjective: "",
+        learningOutcome: {
+            courseId: 0,
+            order: 0,
+            content: "",
+            pcSub: 0,
+            contributionLevel: 0,
+        },
         relatedSustainableDevelopmentGoals: "",
         courseDescription: "",
+    },
+    weeklySubject: {
+        courseId: 0,
+        learningOutcomeId: 0,
+        week: 0,
+        subjects:  "",
+        relatedPreparation:  "",
+        courseNotes: [],
+        suggestedReadings: [],
     },
     evaluationSystem: {
         courseId: 0,
@@ -41,9 +57,20 @@ const initialValues: ISyllabusForm = {
         LO_3: false,
         LO_4: false,
         LO_5: false,
+    },
+    workloadTable: {
+        courseId: 0,
+        semesterActivities: "",
+        number: 0,
+        duration: 0,
+        workload: 0,
+    },
+    programOutcome: {
+        courseId:  0,
+        programCompetencies:  "",
+        contributionLevel:  0,
+        order:  0,
     }
-
-
 };
 
 // TODO: validation and validation translations must be added (please use enum or interface)

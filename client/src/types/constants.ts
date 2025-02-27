@@ -17,6 +17,7 @@ export interface ICourse {
   assistants?: string[];
   nationalQualificationCode?: string;
   courseObjective: string;
+  learningOutcome:ILearningOutcome;
   relatedSustainableDevelopmentGoals?: string;
   courseDescription: string;
 }
@@ -150,11 +151,10 @@ export interface ISyllabusForm {
     id?: number;
     version?: number; //TODO: remove ? optional chaining
     course: ICourse;
-    evaluationSystem?: IEvaluationSystem; //TODO: remove ? optional chaining
-    learningOutcome?: ILearningOutcome; //TODO: remove ? optional chaining
-    programOutcome?: IProgramOutcomes; //TODO: remove ? optional chaining
-    weeklySubject?: IWeeklySubject; //TODO: remove ? optional chaining
-    workloadTable?: IWorkloadTable; //TODO: remove ? optional chaining
+    weeklySubject: IWeeklySubject; //TODO: remove ? optional chaining
+    evaluationSystem: IEvaluationSystem; //TODO: remove ? optional chaining
+    workloadTable: IWorkloadTable; //TODO: remove ? optional chaining
+    programOutcome: IProgramOutcomes; //TODO: remove ? optional chaining
 }
 
 export enum ESyllabusFormEnum {
