@@ -26,7 +26,24 @@ const initialValues: ISyllabusForm = {
         courseObjective: "",
         relatedSustainableDevelopmentGoals: "",
         courseDescription: "",
+    },
+    evaluationSystem: {
+        courseId: 0,
+        semesterActivities: "",
+        number: 0,
+        weighting: 0,
+        semesterActivityCount: 0,
+        semesterActivityWeight: 0,
+        endOfSemesterActivityCount: 0,
+        endOfSemesterActivityWeight: 0,
+        LO_1: false,
+        LO_2: false,
+        LO_3: false,
+        LO_4: false,
+        LO_5: false,
     }
+
+
 };
 
 // TODO: validation and validation translations must be added (please use enum or interface)
