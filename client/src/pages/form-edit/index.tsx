@@ -31,13 +31,18 @@ const initialValues: ISyllabusForm = {
 
 // TODO: validation and validation translations must be added (please use enum or interface)
 const validationSchema = Yup.object({
-    name: Yup.string().required("Ders adı zorunludur"),
+    course: Yup.object({
+        name: Yup.string().required("Ders adı zorunludur"),
+    })
 });
 
+
 // TODO: dispatch the form to backend
-const handleSubmit = async (values: Course) => {
-    console.log("Form Gönderildi:", values);
+const handleSubmit = async (values:ISyllabusForm) => {
+    console.log('values',values);
+    alert("Form Gönderildi!");
 };
+
 
 const SyllabusForm = () => {
     return (
@@ -46,7 +51,9 @@ const SyllabusForm = () => {
                 {() => (
                     <Form className="course-form">
                         <CourseDetails/>
-                        <button type="submit">Gönder</button>
+
+                        <button type="submit" className="btn-submit">Gönder</button>
+
                     </Form>
                 )}
             </Formik>

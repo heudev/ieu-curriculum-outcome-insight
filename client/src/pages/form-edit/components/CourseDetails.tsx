@@ -21,7 +21,7 @@ const CourseDetails = () => {
                 />
             </div>
             <ErrorMessage
-                name={ECourse.NAME}
+                 name={`course.${ECourse.NAME}`}
                 component="div"
                 className="text-red-500 text-sm mt-1"
             />
