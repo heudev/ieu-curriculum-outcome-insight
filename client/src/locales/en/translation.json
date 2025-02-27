@@ -11,8 +11,8 @@
         "name": "Course Name",
         "code": "Code",
         "semester": "Semester",
-        "theory": "Theory (hours/week)",
-        "practice": "Practice / Laboratory (hours/week)",
+        "theoryHoursPerWeek": "Theory (hours/week)",
+        "practiceLabHoursPerWeek": "Practice / Laboratory (hours/week)",
         "localCredit": "Local Credit",
         "ects": "ECTS",
         "prerequisites": "Prerequisites",
@@ -127,11 +127,8 @@
         "online": "Online",
         "hybrid": "Hybrid"
     },
-    "semesters": {
-        "fall": "Fall",
-        "spring": "Spring",
-        "fallSpring": "Fall/Spring"
-    },
+
+
     "programOutcome": {
         "title": "RELATIONSHIP BETWEEN COURSE LEARNING OUTCOMES AND PROGRAM COMPETENCIES",
         "py": "PC",
