@@ -2,6 +2,8 @@ import CourseDetails from "./components/CourseDetails.tsx";
 import {Formik, Form} from "formik";
 import {ISyllabusForm} from "../../types/constants.ts";
 import * as Yup from "yup";
+import DataHandler from "../../components/DataHandler.tsx";
+import ProgramOutcomeTable from "../form-edit/components/ProgramOutcomeTable.tsx";
 
 // TODO: PLEASE ADD SPLIT STRUCTURE FOR ARRAY FIELDS
 const initialValues: ISyllabusForm = {
@@ -95,9 +97,9 @@ const SyllabusForm = () => {
                 {() => (
                     <Form className="course-form">
                         <CourseDetails/>
+                         <ProgramOutcomeTable />
 
-                        <button type="submit" className="btn-submit">Gönder</button>
-
+                        <DataHandler />
                     </Form>
                 )}
             </Formik>

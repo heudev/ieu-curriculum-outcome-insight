@@ -97,14 +97,14 @@ export enum LearningOutcomeEnum {
     CONTRIBUTION_LEVEL = "contributionLevel"
 }
 
-export interface IProgramOutcomes {
+export interface IProgramOutcome {
     courseId: number;
     programCompetencies: string;
     contributionLevel: number;
     order: number;
 }
 
-export enum EProgramOutcomesEnum {
+export enum EProgramOutcome {
     COURSE_ID = "courseId",
     PROGRAM_COMPETENCIES = "programCompetencies",
     CONTRIBUTION_LEVEL = "contributionLevel",
@@ -154,7 +154,7 @@ export interface ISyllabusForm {
     weeklySubject: IWeeklySubject; //TODO: remove ? optional chaining
     evaluationSystem: IEvaluationSystem; //TODO: remove ? optional chaining
     workloadTable: IWorkloadTable; //TODO: remove ? optional chaining
-    programOutcome: IProgramOutcomes; //TODO: remove ? optional chaining
+    programOutcome: IProgramOutcome; //TODO: remove ? optional chaining
 }
 
 export enum ESyllabusFormEnum {
