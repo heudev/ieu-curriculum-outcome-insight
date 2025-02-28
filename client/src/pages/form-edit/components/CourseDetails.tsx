@@ -20,11 +20,8 @@ const CourseDetails = () => {
                     className="w-full p-2 border-l border-gray-300"
                 />
             </div>
-            <ErrorMessage
-                 name={`course.${ECourse.NAME}`}
-                component="div"
-                className="text-red-500 text-sm mt-1"
-            />
+            <ErrorMessage name={`course.${ECourse.NAME}`} component="div" className="text-red-500 text-sm mt-1" />
+            
             <div className="grid grid-cols-6 border-x border border-gray-300 mt-5">
                 <div
                     className="border-r border-gray-300 p-2 font-bold bg-white">{t(`course.${ECourse.CODE}`)}</div>
@@ -88,6 +85,12 @@ const CourseDetails = () => {
                     />
                 </div>
             </div>
+            <ErrorMessage name={`course.${ECourse.CODE}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.SEMESTER}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.THEORY_HOURS}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.PRACTICE_HOURS}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.LOCAL_CREDIT}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.ECTS}`} component="div" className="text-red-500 text-sm mt-1" />
 
             <div className="border-x border border-gray-300 mt-5">
                 <div className="grid grid-cols-2 border-b border-gray-300">
@@ -208,7 +211,20 @@ const CourseDetails = () => {
                     </div>
                 </div>
             </div>
+            <ErrorMessage name={`course.${ECourse.PREREQUISITES}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.LANGUAGE}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.TYPE}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.LEVEL}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.DELIVERY_TYPE}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.TEACHING_METHODS}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.COORDINATOR}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.INSTRUCTORS}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.ASSISTANTS}`} component="div" className="text-red-500 text-sm mt-1" />
+            <ErrorMessage name={`course.${ECourse.NATIONAL_QUALIFICATION_CODE}`} component="div" className="text-red-500 text-sm mt-1" />
+            {/* Blank space between tables */}
+            <div className="spacer" style={{ height: "20px" }}></div>
         </div>
+        
     );
 };
 

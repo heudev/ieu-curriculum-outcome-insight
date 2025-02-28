@@ -4,11 +4,12 @@ import {ISyllabusForm} from "../../types/constants.ts";
 import * as Yup from "yup";
 import DataHandler from "../../components/DataHandler.tsx";
 import ProgramOutcomeTable from "../form-edit/components/ProgramOutcomeTable.tsx";
+import PopupForm from "../curriculum-edit/PopupForm.tsx";
 
 // TODO: PLEASE ADD SPLIT STRUCTURE FOR ARRAY FIELDS
 const initialValues: ISyllabusForm = {
     course:{
-        name: "INITIAL NAME",
+        name: "",
         code: "",
         semester: "",
         theoryHoursPerWeek: 0,
@@ -20,10 +21,10 @@ const initialValues: ISyllabusForm = {
         type: "",
         level: "",
         deliveryType: "",
-        teachingMethods: [],
-        coordinator: [],
-        instructors: [],
-        assistants: [],
+        teachingMethods: [""],
+        coordinator: [""],
+        instructors: [""],
+        assistants: [""],
         nationalQualificationCode: "",
         courseObjective: "",
         learningOutcome: {
@@ -79,7 +80,41 @@ const initialValues: ISyllabusForm = {
 const validationSchema = Yup.object({
     course: Yup.object({
         name: Yup.string().required("Ders adı zorunludur"),
-    })
+        code: Yup.string().required("Ders kodu zorunludur"),
+        semester: Yup.string().required("Dönem bilgisi zorunludur"),
+        theoryHoursPerWeek: Yup.number()
+            .min(0, "Teorik ders saati 0 veya daha büyük olmalıdır")
+            .required("Teorik ders saati zorunludur"),
+        practiceLabHoursPerWeek: Yup.number()
+            .min(0, "Uygulama/Laboratuvar saati 0 veya daha büyük olmalıdır")
+            .required("Uygulama/Laboratuvar saati zorunludur"),
+        localCredit: Yup.number()
+            .min(1, "Yerel kredi 1 veya daha büyük olmalıdır")
+            .required("Yerel kredi zorunludur"),
+        ects: Yup.number()
+            .min(1, "ECTS 1 veya daha büyük olmalıdır")
+            .required("ECTS zorunludur"),
+        prerequisites: Yup.array().of(Yup.string().required("Ders onkoşulları zorunludur")), //TODO: fix
+        language: Yup.string().required("Ders dili zorunludur"),
+        type: Yup.string().required("Ders tipi zorunludur"),
+        level: Yup.string().required("Ders seviyesi zorunludur"),
+        deliveryType: Yup.string().required("Dersin işleniş türü zorunludur"),
+        teachingMethods: Yup.array().of(Yup.string().required("Ders oğretim teknikleri zorunludur")),
+        coordinator: Yup.array().of(Yup.string().required("Ders koordinatörü zorunludur")), //TODO: fix
+        instructors: Yup.array().of(Yup.string().required("Ders instructorı zorunludur")), //TODO: fix
+        assistants: Yup.array().of(Yup.string().required("Ders assistantı zorunludur")), //TODO: fix
+        nationalQualificationCode: Yup.string().required("Ders ulusal yeterlilik kodu zorunludur"),
+        courseObjective: Yup.string().required("Dersin amacı zorunludur"),
+        learningOutcome: Yup.object({
+            courseId: Yup.number().required("Course ID zorunludur"),
+            order: Yup.number().required("Öğrenme çıktısı sırası zorunludur"),
+            content: Yup.string().required("Öğrenme çıktısı içeriği zorunludur"),
+            pcSub: Yup.number(),
+            contributionLevel: Yup.number().min(0).max(5, "Katkı seviyesi 0-5 arasında olmalıdır"),
+        }),
+        relatedSustainableDevelopmentGoals: Yup.string(),
+        courseDescription: Yup.string().required("Ders açıklaması zorunludur"),
+    }),
 });
 
 
@@ -93,12 +128,12 @@ const handleSubmit = async (values:ISyllabusForm) => {
 const SyllabusForm = () => {
     return (
         <div className="mt-5 space-y-4 px-30">
+            <PopupForm />
             <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                 {() => (
                     <Form className="course-form">
                         <CourseDetails/>
                          <ProgramOutcomeTable />
-
                         <DataHandler />
                     </Form>
                 )}

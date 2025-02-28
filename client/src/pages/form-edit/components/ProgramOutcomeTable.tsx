@@ -17,11 +17,10 @@ export default function ProgramOutcomeTable() {
             <table className="w-full border border-gray-300">
                 <thead>
                 <tr className="bg-orange-400 text-white">
-                    <th className="border border-gray-300 p-2 text-left w-20 text-sm font-normal">{t(`programOutcome.${EProgramOutcome.ORDER}`)}</th>
+                    <th className="border border-gray-300 p-2 text-left w-20 text-sm font-normal">{`programOutcome.${EProgramOutcome.ORDER}`}</th>
                     <th className="border border-gray-300 p-2 text-left w-20 text-sm font-normal">{'PC Sub'}</th>
                     <th className="border border-gray-300 p-2 text-left text-sm font-normal">{t(`programOutcome.${EProgramOutcome.PROGRAM_COMPETENCIES}`)}</th>
-                    <th className="border border-gray-300 p-2 text-center text-sm font-normal"
-                        colSpan={5}>{t(`programOutcome.${EProgramOutcome.CONTRIBUTION_LEVEL}`)}</th>
+                    <th className="border border-gray-300 p-2 text-center text-sm font-normal" colSpan={5}>{t(`programOutcome.${EProgramOutcome.CONTRIBUTION_LEVEL}`)}</th>
                 </tr>
                 <tr>
                     <th className="border border-gray-300 p-2" colSpan={3}></th>

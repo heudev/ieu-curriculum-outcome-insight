@@ -180,5 +180,5 @@ export enum ECommon {
 export enum ESemesters {
     FALL = "fall",
     SPRING = "spring",
-    FALL_SPRING = "fallSpring",
+    FALL_SPRING = "fall/spring",
 }
