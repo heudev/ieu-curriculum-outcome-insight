@@ -138,5 +138,34 @@
         "pyAlt": "PY Alt.",
         "content": "Program Yeterlilikleri / Çıktıları",
         "contributionLevel": "Katkı Düzeyi"
-    }
+    },
+    "errors": {
+        "required_course_name": "Ders adı zorunludur",
+        "required_course_code": "Ders kodu zorunludur",
+        "required_semester": "Dönem bilgisi zorunludur",
+        "required_theory_hours": "Teorik ders saati zorunludur",
+        "required_min_theory_hours": "Teorik ders saati 0 veya daha büyük olmalıdır",
+        "required_practice_lab_hours": "Uygulama/Laboratuvar saati zorunludur",
+        "required_min_practice_lab_hours": "Uygulama/Laboratuvar saati 0 veya daha büyük olmalıdır",
+        "required_local_credit": "Yerel kredi zorunludur",
+        "required_min_local_credit": "Yerel kredi 1 veya daha büyük olmalıdır",
+        "required_ects": "AKTS zorunludur",
+        "required_min_ects": "ECTS 1 veya daha büyük olmalıdır",
+        "required_prerequisites": "Ders onkoşulları zorunludur",
+        "required_language": "Ders dili zorunludur",
+        "required_type": "Ders tipi zorunludur",
+        "required_level": "Ders seviyesi zorunludur",
+        "required_delivery_type": "Dersin işleniş türü zorunludur",
+        "required_teaching_methods": "Ders öğretim teknikleri zorunludur",
+        "required_coordinator": "Ders koordinatörü zorunludur",
+        "required_instructors": "Ders öğretim üyeleri zorunludur",
+        "required_assistants": "Ders asistanları zorunludur",
+        "required_national_qualification_code": "Ulusal yeterlilik kodu zorunludur",
+        "required_course_objective": "Dersin amacı zorunludur",
+        "required_learning_outcome_course_id": "Course ID zorunludur",
+        "required_learning_outcome_order": "Öğrenme çıktısı sırası zorunludur",
+        "required_learning_outcome_content": "Öğrenme çıktısı içeriği zorunludur",
+        "required_contribution_level": "Katkı düzeyi 0-5 arasında olmalıdır",
+        "required_course_description": "Ders tanımı zorunludur"
+      }
 }

@@ -79,41 +79,41 @@ const initialValues: ISyllabusForm = {
 // TODO: validation and validation translations must be added (please use enum or interface)
 const validationSchema = Yup.object({
     course: Yup.object({
-        name: Yup.string().required("Ders adı zorunludur"),
-        code: Yup.string().required("Ders kodu zorunludur"),
-        semester: Yup.string().required("Dönem bilgisi zorunludur"),
+        name: Yup.string().required("errors.required_course_name"),
+        code: Yup.string().required("errors.required_course_code"),
+        semester: Yup.string().required("errors.required_semester"),
         theoryHoursPerWeek: Yup.number()
-            .min(0, "Teorik ders saati 0 veya daha büyük olmalıdır")
-            .required("Teorik ders saati zorunludur"),
+            .min(0, "errors.required_min_theory_hours")
+            .required("errors.required_theory_hours"),
         practiceLabHoursPerWeek: Yup.number()
-            .min(0, "Uygulama/Laboratuvar saati 0 veya daha büyük olmalıdır")
-            .required("Uygulama/Laboratuvar saati zorunludur"),
+            .min(0, "errors.required_min_practice_lab_hours")
+            .required("errors.required_practice_lab_hours"),
         localCredit: Yup.number()
-            .min(1, "Yerel kredi 1 veya daha büyük olmalıdır")
-            .required("Yerel kredi zorunludur"),
+            .min(1, "errors.required_min_local_credit")
+            .required("errors.required_local_credit"),
         ects: Yup.number()
-            .min(1, "ECTS 1 veya daha büyük olmalıdır")
-            .required("ECTS zorunludur"),
-        prerequisites: Yup.array().of(Yup.string().required("Ders onkoşulları zorunludur")), //TODO: fix
-        language: Yup.string().required("Ders dili zorunludur"),
-        type: Yup.string().required("Ders tipi zorunludur"),
-        level: Yup.string().required("Ders seviyesi zorunludur"),
-        deliveryType: Yup.string().required("Dersin işleniş türü zorunludur"),
-        teachingMethods: Yup.array().of(Yup.string().required("Ders oğretim teknikleri zorunludur")),
-        coordinator: Yup.array().of(Yup.string().required("Ders koordinatörü zorunludur")), //TODO: fix
-        instructors: Yup.array().of(Yup.string().required("Ders instructorı zorunludur")), //TODO: fix
-        assistants: Yup.array().of(Yup.string().required("Ders assistantı zorunludur")), //TODO: fix
-        nationalQualificationCode: Yup.string().required("Ders ulusal yeterlilik kodu zorunludur"),
-        courseObjective: Yup.string().required("Dersin amacı zorunludur"),
+            .min(1, "errors.required_min_ects")
+            .required("errors.required_ects"),
+        prerequisites: Yup.array().of(Yup.string().required("errors.required_prerequisites")), //TODO: fix
+        language: Yup.string().required("errors.required_language"),
+        type: Yup.string().required("errors.required_type"),
+        level: Yup.string().required("errors.required_level"),
+        deliveryType: Yup.string().required("errors.required_delivery_type"),
+        teachingMethods: Yup.array().of(Yup.string().required("errors.required_teaching_methods")),
+        coordinator: Yup.array().of(Yup.string().required("errors.required_coordinator")), //TODO: fix
+        instructors: Yup.array().of(Yup.string().required("errors.required_instructors")), //TODO: fix
+        assistants: Yup.array().of(Yup.string().required("errors.required_assistants")), //TODO: fix
+        nationalQualificationCode: Yup.string().required("errors.required_national_qualification_code"),
+        courseObjective: Yup.string().required("errors.required_course_objective"),
         learningOutcome: Yup.object({
-            courseId: Yup.number().required("Course ID zorunludur"),
-            order: Yup.number().required("Öğrenme çıktısı sırası zorunludur"),
-            content: Yup.string().required("Öğrenme çıktısı içeriği zorunludur"),
+            courseId: Yup.number().required("errors.required_learning_outcome_course_id"),
+            order: Yup.number().required("errors.required_learning_outcome_order"),
+            content: Yup.string().required("errors.required_learning_outcome_content"),
             pcSub: Yup.number(),
-            contributionLevel: Yup.number().min(0).max(5, "Katkı seviyesi 0-5 arasında olmalıdır"),
+            contributionLevel: Yup.number().min(0).max(5, "errors.required_contribution_level"),
         }),
         relatedSustainableDevelopmentGoals: Yup.string(),
-        courseDescription: Yup.string().required("Ders açıklaması zorunludur"),
+        courseDescription: Yup.string().required("errors.required_course_description"),
     }),
 });
 
