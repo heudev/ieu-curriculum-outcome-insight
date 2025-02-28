@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Outcomes from "../pages/outcomes";
-import CurriculumEdit from "../pages/curriculum-edit";
+import SyllabusForm from "../pages/form-edit";
 
 const router = createBrowserRouter([
     {
@@ -10,11 +10,11 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <CurriculumEdit />,
+                element: <SyllabusForm />,
             },
             {
                 path: "curriculum-edit",
-                element: <CurriculumEdit />,
+                element: <SyllabusForm />,
             },
             {
                 path: "outcomes",
