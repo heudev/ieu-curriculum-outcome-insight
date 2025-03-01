@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
                 onUpdate: "CASCADE",
             });
 
-            SyllabusForm.belongsTo(models.ProgramOutcomes, {
+            SyllabusForm.belongsTo(models.ProgramOutcome, {
                 foreignKey: "programOutcomeId",
                 as: "programOutcome",
                 onDelete: "CASCADE",
@@ -51,11 +51,6 @@ module.exports = (sequelize) => {
 
     SyllabusForm.init(
         {
-            id: {
-                type: DataTypes.INTEGER,
-                autoIncrement: true,
-                primaryKey: true,
-            },
             version: {
                 type: DataTypes.INTEGER,
                 allowNull: false,

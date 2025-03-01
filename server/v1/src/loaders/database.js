@@ -1,8 +1,8 @@
 const { Sequelize } = require("sequelize");
-
 const path = require("path");
 const rootDir = require('../scripts/utils/path');
 const config = require(path.join(rootDir, 'config', 'index.js'));
+
 
 const sequelize = new Sequelize(
     config.db.POSTGRES_DB,
@@ -12,7 +12,7 @@ const sequelize = new Sequelize(
         host: config.db.POSTGRES_HOST,
         port: config.db.POSTGRES_PORT,
         dialect: config.db.POSTGRES_DIALECT,
-        logging: false,
+        logging: true,
         pool: {
             max: 5,
             min: 0,
@@ -21,6 +21,22 @@ const sequelize = new Sequelize(
         }
     }
 );
+
+const models = {};
+models.Course = require("../models/course")(sequelize);
+models.LearningOutcome = require("../models/learningOutcome")(sequelize);
+models.EvaluationSystem = require("../models/evaluationSystem")(sequelize);
+models.ProgramOutcome = require("../models/programOutcome")(sequelize);
+models.WeeklySubject = require("../models/weeklySubject")(sequelize);
+models.WorkloadTable = require("../models/workloadTable")(sequelize);
+models.SyllabusForm = require("../models/syllabusForm")(sequelize);
+
+Object.keys(models).forEach((modelName) => {
+    if (models[modelName].associate) {
+        models[modelName].associate(models);
+    }
+});
+
 
 
 const connectDB = async () => {
@@ -33,5 +49,4 @@ const connectDB = async () => {
     }
 };
 
-
-module.exports = { sequelize, connectDB };
+module.exports = { sequelize, connectDB, models };
