@@ -20,7 +20,7 @@ const CourseDetails = () => {
                     className="w-full p-2 border-l border-gray-300"
                 />
             </div>
-            <ErrorMessage name={`course.${ECourse.NAME}`} component="div" className="text-red-500 text-sm mt-1" />
+            {errors.course?.name && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.name)}</div>}
             
             <div className="grid grid-cols-6 border-x border border-gray-300 mt-5">
                 <div
@@ -85,12 +85,12 @@ const CourseDetails = () => {
                     />
                 </div>
             </div>
-            <ErrorMessage name={`course.${ECourse.CODE}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.SEMESTER}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.THEORY_HOURS}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.PRACTICE_HOURS}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.LOCAL_CREDIT}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.ECTS}`} component="div" className="text-red-500 text-sm mt-1" />
+            {errors.course?.code && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.code)}</div>}
+            {errors.course?.semester && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.semester)}</div>}
+            {errors.course?.theoryHoursPerWeek && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.theoryHoursPerWeek)}</div>}
+            {errors.course?.practiceLabHoursPerWeek && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.practiceLabHoursPerWeek)}</div>}
+            {errors.course?.localCredit && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.localCredit)}</div>}
+            {errors.course?.ects && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.ects)}</div>}
 
             <div className="border-x border border-gray-300 mt-5">
                 <div className="grid grid-cols-2 border-b border-gray-300">
@@ -211,16 +211,16 @@ const CourseDetails = () => {
                     </div>
                 </div>
             </div>
-            <ErrorMessage name={`course.${ECourse.PREREQUISITES}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.LANGUAGE}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.TYPE}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.LEVEL}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.DELIVERY_TYPE}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.TEACHING_METHODS}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.COORDINATOR}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.INSTRUCTORS}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.ASSISTANTS}`} component="div" className="text-red-500 text-sm mt-1" />
-            <ErrorMessage name={`course.${ECourse.NATIONAL_QUALIFICATION_CODE}`} component="div" className="text-red-500 text-sm mt-1" />
+            {errors.course?.prerequisites && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.prerequisites)}</div>}
+            {errors.course?.language && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.language)}</div>}
+            {errors.course?.type && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.type)}</div>}
+            {errors.course?.level && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.level)}</div>}
+            {errors.course?.deliveryType && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.deliveryType)}</div>}
+            {errors.course?.teachingMethods && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.teachingMethods)}</div>}
+            {errors.course?.coordinator && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.coordinator)}</div>}
+            {errors.course?.instructors && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.instructors)}</div>}
+            {errors.course?.assistants && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.assistants)}</div>}
+            {errors.course?.nationalQualificationCode && <div className="invalid-feedback text-red-500 text-sm mt-1">{t(errors.course?.nationalQualificationCode)}</div>}
             {/* Blank space between tables */}
             <div className="spacer" style={{ height: "20px" }}></div>
         </div>

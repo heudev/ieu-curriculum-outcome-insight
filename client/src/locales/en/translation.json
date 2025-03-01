@@ -127,13 +127,40 @@
         "online": "Online",
         "hybrid": "Hybrid"
     },
-
-
     "programOutcome": {
         "title": "RELATIONSHIP BETWEEN COURSE LEARNING OUTCOMES AND PROGRAM COMPETENCIES",
         "py": "PC",
         "pyAlt": "PC Alt.",
         "content": "Program Competencies / Outcomes",
         "contributionLevel": "Contribution Level"
-    }
+    },
+    "errors": {
+        "required_course_name": "Course name is required",
+        "required_course_code": "Course code is required",
+        "required_semester": "Semester is required",
+        "required_theory_hours": "Theory hours are required",
+        "required_min_theory_hours": "Theoretical lesson hours must be 0 or greater",
+        "required_practice_lab_hours": "Practice/Lab hours are required",
+        "required_min_practice_lab_hours": "Practice/Lab time must be 0 or greater",
+        "required_local_credit": "Local credit is required",
+        "required_min_local_credit": "Local credit must be 1 or greater",
+        "required_ects": "ECTS is required",
+        "required_min_ects": "ECTS must be 1 or higher",
+        "required_prerequisites": "Course prerequisites are mandatory",
+        "required_language": "Course language is required",
+        "required_type": "Course type is required",
+        "required_level": "Course level is required",
+        "required_delivery_type": "Delivery type is required",
+        "required_teaching_methods": "Teaching methods are required",
+        "required_coordinator": "Coordinator is required",
+        "required_instructors": "Instructors are required",
+        "required_assistants": "Assistants are required",
+        "required_national_qualification_code": "National qualification code is required",
+        "required_course_objective": "Course objective is required",
+        "required_learning_outcome_course_id": "Course ID is required",
+        "required_learning_outcome_order": "The order of learning outcomes is required",
+        "required_learning_outcome_content": "The content of learning outcomes is required",
+        "required_contribution_level": "Contribution level must be between 0 and 5",
+        "required_course_description": "Course description is required"
+      }
 }
